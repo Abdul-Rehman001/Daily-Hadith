@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background: url(hadith.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
+
+.container {
+    width: 80%;
+    /* Adjust width for different screen sizes */
+    max-width: 800px;
+    /* Maximum width for larger screens */
+}
+
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    background-color: rgb(5, 44, 66);
+    color: white;
+    font-family: sans-serif;
+    height: 60px;
+    border: 1px solid rgb(39, 39, 39);
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(0, 35, 51);
+    text-transform: uppercase;
+}
+
+.main-content {
+    background-color: rgba(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid rgb(60, 99, 117);
+    color: rgb(0, 33, 47);
+    padding: 25px 20px;
+    /* Adjust padding for different screen sizes */
+    box-shadow: 0 0 50px rgb(28, 28, 28);
+    background: transparent;
+    backdrop-filter: blur(30px);
+    transition: 0.2s;
+}
+
+.main-content .text {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    border: 1px solid rgba(34, 80, 97, 0.807);
+    border-radius: 10px;
+
+    padding: 15px;
+    box-shadow: 0 0 3px black inset;
+    overflow: auto;
+    cursor: pointer;
+    height: 40vh;
+    background-color: rgba(148, 176, 189, 0.325);
+    transition: 0.4s;
+}
+
+.main-content .text:hover {
+    background-color: rgba(74, 136, 165, 0.303);
+}
+
+.main-content .person {
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-shadow: 1px 0px 5px black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.main-content .person:hover {
+    color: rgb(131, 157, 167);
+}
+
+.button-area button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(5, 50, 66);
+    font-size: 15px;
+    width: 100%;
+    max-width: 200px;
+    /* Limit button width for smaller screens */
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid rgb(16, 58, 73);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(90, 90, 90);
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.button-area button:hover {
+    background-color: rgb(14, 65, 90);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0px 10px rgb(81, 128, 150);
+    border: 1px solid white;
+
+}
+
+.button-area button:active {
+    background-color: rgb(76, 108, 127);
+    color: rgb(255, 255, 255);
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 65%;
+    }
+
+    .header {
+        font-size: 1rem;
+    }
+
+    .person {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        width: 50%;
+    }
+
+    .header {
+        font-size: 1rem;
+    }
+
+    .person {
+        font-size: 1.2rem;
+    }
+}
