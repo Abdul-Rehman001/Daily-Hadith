@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     /* Adjust width for different screen sizes */
     max-width: 800px;
     /* Maximum width for larger screens */
@@ -142,7 +142,7 @@ body {
 /* Media Queries for Responsive Design */
 @media only screen and (min-width: 768px) {
     .container {
-        width: 65%;
+        width: 70%;
     }
 
     .header {
@@ -156,7 +156,7 @@ body {
 
 @media only screen and (min-width: 1024px) {
     .container {
-        width: 50%;
+        width: 60%;
     }
 
     .header {
